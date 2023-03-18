@@ -3,10 +3,10 @@ import org.objects.Dice;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class DiceTests
+public class DiceTest
 {
     @Test
-    public void constructorTest()
+    public void testConstructor()
     {
         Dice die = new Dice(6, "blue");
         assertAll(
@@ -15,7 +15,7 @@ public class DiceTests
         );
     }
     @Test
-    public void rollTest()
+    public void testRoll()
     {
         Dice die = new Dice(20, "teal");
 
