@@ -30,7 +30,7 @@ public class DiceTests
         Dice dice = new Dice(6, "white");
 
         dice.rollMany(5);
-        
+
     }
 
 }
