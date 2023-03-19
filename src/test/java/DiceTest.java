@@ -24,5 +24,14 @@ public class DiceTest
         assertTrue(value <= die.getSides() + 1);
     }
 
+    @Test
+    public void testToString()
+    {
+        Dice die = new Dice(10, "yellow");
+
+        assertEquals(die.toString(), "A 10 sided die");
+    }
+
+
 
 }
