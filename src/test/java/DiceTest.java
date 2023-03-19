@@ -25,6 +25,19 @@ public class DiceTest
     }
 
     @Test
+    public void testRollMany()
+    {
+        Dice die = new Dice(6, "white");
+
+        int times = 5;
+
+        int[] rolls =  die.rollMany(times);
+
+        assertTrue(rolls.length == times);
+
+    }
+
+    @Test
     public void testToString()
     {
         Dice die = new Dice(10, "yellow");
